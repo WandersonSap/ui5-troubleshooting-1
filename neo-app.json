@@ -18,8 +18,20 @@
         "entryPath": "/resources",
         "version": "1.71.15"
       },
-      "description": "SAPUI5 Test Resources"
+      "description": "EXEMPLO 2"
     },
+    
+    {
+      "path": "/ex3/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+
+      },
+      "description": "EXEMPLO 2"
+    },
+    
     {
       "path": "/test-resources",
       "target": {

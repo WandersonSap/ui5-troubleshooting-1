@@ -1,27 +1,31 @@
 <script id="sap-ui-bootstrap" 
      type="text/javascript"
-     src="resources/sap-ui-core.js"
+     src="../ex3/resources/sap-ui-core.js"
      data-sap-ui-theme="sap_belize"
-     data-sap-ui-libs="SAP.M"
+     data-sap-ui-libs="sap.m"
      data-sap-ui-compatVersion="edge">
 </script>
 
-<script src="./logica"></script>
+<script src="logica.js"></script>
 
-<script>
+<script >
 
-	var oCore = sap.ui.getCore();
-	oCore.attachInit( deselhaTela );
+	sap.ui.getCore().attachInit(function () {
+          desenhaTela();  
+         });
 
 </script>
 
 <body id="corpo_da_pagina">
 	<div id="container_label">
 	</div>
+	
 	<div id="container_input">
 	</div>
+	
 	<div id="container_checkbox">
 	</div>
+	
 	<div id="container_button">
 	</div>
 </body>
