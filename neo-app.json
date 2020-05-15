@@ -11,11 +11,12 @@
       "description": "SAPUI5 Resources"
     },
     {
-      "path": "/ex1/resources",
+      "path": "/ex2/resources",
       "target": {
         "type": "service",
         "name": "sapui5",
-        "entryPath": "/ex1/resources"
+        "entryPath": "/resources",
+        "version": "1.71.15"
       },
       "description": "SAPUI5 Test Resources"
     },
