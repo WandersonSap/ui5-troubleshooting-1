@@ -2,7 +2,7 @@
 
 <script id="sap-ui-bootstrap" 
      type="text/javascript"
-     src="resources/sap-ui-core.js"
+     src="../ex2/resources/sap-ui-core.js"
      data-sap-ui-theme="sap_belize"
      data-sap-ui-libs="sap.m"
      data-sap-ui-compatVersion="edge"> 
@@ -12,12 +12,23 @@
 
 	try{
 		sap.ui.getCore().attachInit(function(){
-			var sVersion = sap.ui.getCore().getConfiguration().getVersion().toString();
-			if(sVersion === "1.71.15"){
-				alert("Versão correta carregada");
-			}else{
-				alert("Versão incorreta carregada");
-			}
+		//var sVersion = sap.ui.getCore().getConfiguration().getVersion().toString();
+			 sap.ui.require([
+					    "sap/ui/VersionInfo",
+					    "sap/base/util/Version"
+					], function(VersionInfo, VersionUtil) {
+					    VersionInfo.load().then(function(oCurrentVersionInfo) {
+					        var oVersionUtil = new VersionUtil(oCurrentVersionInfo.version);
+					        var sVersion = oVersionUtil.toString();
+					        if(sVersion === "1.71.15"){
+								alert("Versão correta carregada");
+							}else{
+								alert("Versão incorreta carregada");
+							}
+					    });
+					});
+										
+			
 		});
 	} catch(oError){
 		alert("UI5 não carregado");
