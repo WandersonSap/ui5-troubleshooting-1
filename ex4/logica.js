@@ -1,9 +1,20 @@
+function onPressButton(oInformacoesDoEvento) {
+	// Um pouco de JS nativo para adicionar a classe 'sapUiBody' no 'body' da página
+	// Na prática esta classe será usada em qualquer app
+
+	// TODO: encontrar as chamadas abaixo na documentação do DevDocs ou MDN
+	var oDomBody = document.querySelector("#corpo_da_pagina");
+	oDomBody.classList.add("sapUiBody");
+}
 
 function desenhaTela() {
 
-	var oLabel = new sap.m.Label();
+	/*var oLabel = new sap.m.Label();
 	oLabel.setText("Idioma"); // TODO: encontrar documentação deste metodo na documentação
-	oLabel.placeAt("container_label");
+	oLabel.placeAt("container_label");*/
+	new sap.m.Text({
+           text : "Idioma"
+        }).placeAt("container_label");
 
 	var oInput = new sap.m.Input();
 	var sLanguage = sap.ui.getCore().getConfiguration().getLanguage(); // TODO: encontrar documentação deste metodo na documentação
@@ -36,14 +47,7 @@ function desenhaTela() {
 	} 
 }
 
-function onPressButton(oInformacoesDoEvento) {
-	// Um pouco de JS nativo para adicionar a classe 'sapUiBody' no 'body' da página
-	// Na prática esta classe será usada em qualquer app
 
-	// TODO: encontrar as chamadas abaixo na documentação do DevDocs ou MDN
-	var oDomBody = document.querySelector("#corpo_da_pagina");
-	oDomBody.classList.add("sapUiBody");
-}
 
 function mudarTema(oInformacoesDoEvento){
 	var oRadioButtonSelecionado = oInformacoesDoEvento.getSource();

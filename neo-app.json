@@ -29,7 +29,18 @@
         "entryPath": "/resources"
 
       },
-      "description": "EXEMPLO 2"
+      "description": "EXEMPLO 3"
+    },
+    
+    {
+      "path": "/ex4/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+
+      },
+      "description": "EXEMPLO 4"
     },
     
     {

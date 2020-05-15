@@ -1,17 +1,20 @@
 <script id="sap-ui-bootstrap" 
      type="text/javascript"
-     src="resources/sap-ui-core.js"
+     src="../ex4/resources/sap-ui-core.js"
      data-sap-ui-theme="sap_bluecrystal"
      data-sap-ui-libs="sap.m"
      data-sap-ui-compatVersion="edge">
 </script>
 
-<script src="./logica"></script>
+<script src="logica.js"></script>
 
 <script>
 
-	var oCore = sap.ui.getCore();
-	oCore.attachInit( deselhaTela );
+//	var oCore = sap.ui.getCore();
+//	oCore.attachInit( deselhaTela );
+	sap.ui.getCore().attachInit(function () {
+          desenhaTela();  
+         });
 
 </script>
 
@@ -22,6 +25,6 @@
 	</div>
 	<div id="container_checkbox">
 	</div>
-	<div id="container_radio___buttons">
+	<div id="container_radiobuttons">
 	</div>
 </body>

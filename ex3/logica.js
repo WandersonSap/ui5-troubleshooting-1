@@ -19,7 +19,7 @@ function desenhaTela() {
 	oInput.setEnabled(false);
 	oInput.placeAt("container_input");
 
-	// TODO: ler a documentação do 'constructor' da classe abaixo
+/*	// TODO: ler a documentação do 'constructor' da classe abaixo
 	var oCheckbox = new sap.m.CheckBox({
 		text: "Right To Left", // Texto inicial
 		selected: false,
@@ -31,6 +31,24 @@ function desenhaTela() {
 	});
 	oCheckbox.setText("RTL"); // Texto alterado em tempo de execução
 	oCheckbox.placeAt("container_checkbox");
+	
+	var oRB1 = new sap.m.RadioButton({
+	        text: "sap_fiori_3",
+	        groupName: "Group1",
+	        select: function() {
+				
+	        }
+	    });	
+	oRB1.placeAt("container_radio");    
+	
+	var oRB2 = new sap.m.RadioButton({
+	        text: "sap_fiori_3_hcb",
+	        groupName: "Group1",
+	        select: function() {
+				
+	        }
+	    });	
+	oRB2.placeAt("container_radio"); 	
 
 	// TODO: ler a documentação do 'constructor' da classe abaixo
 	var oButton = new sap.m.Button("myButton",{
@@ -40,7 +58,7 @@ function desenhaTela() {
          }
 		
 	});
-	oButton.placeAt("container_button");
+	oButton.placeAt("container_button");*/
 
 }
 
