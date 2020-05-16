@@ -3,7 +3,8 @@
 	height="100%"
 	controllerName="ovly.logica"
 	xmlns:mvc="sap.ui.core.mvc" 
-	xmlns="sap.f" 
+	xmlns="sap.m" 
+	xmlns:f="sap.ui.layout.form" 
 	>
 	<App>
 		<pages>
@@ -11,15 +12,18 @@
 				<content>
 					<GenericTile header="Bootstraping com CDN" subheader="Exercício 1" class="sapUiSmallMargin" press="ex1" />
 					<GenericTile header="Bootstraping com neo-app.json" subheader="Exercício 2" class="sapUiSmallMargin" press="ex2" />
-					<GenericTile header="Controles com JS" subheader="Exercício 3" class="sapUiSmallMargin" press="ex3 />
-					<!--
-						Completar
-					-->
+					<GenericTile header="Controles com JS" subheader="Exercício 3" class="sapUiSmallMargin" press="ex3" />
+					<GenericTile header="Controles com JS" subheader="Exercício 4" class="sapUiSmallMargin" press="ex4" />
+					<GenericTile header="Controles com JS" subheader="Exercício 5" class="sapUiSmallMargin" press="ex5" />
+					<GenericTile header="Controles com JS" subheader="Exercício 6" class="sapUiSmallMargin" press="ex6" />
+					<GenericTile header="Controles com JS" subheader="Exercício 7" class="sapUiSmallMargin" press="ex7" />
+					<GenericTile header="Instanciar View de forma assíncrona" subheader="Exercício 8" class="sapUiSmallMargin" press="ex8" />
+					<GenericTile header="Instanciar View de forma assíncrona" subheader="Exercício 9" class="sapUiSmallMargin" press="ex9" />
 				</content>
 				<footer>
 					<Toolbar>
 						<content>
-							<ToolbarSpacerr />
+							<ToolbarSpacer />
 							<Button text="GitHub" type="Emphasized" press="onOpenGitHub" />
 						</content>
 					</Toolbar>

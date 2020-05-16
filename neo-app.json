@@ -92,7 +92,7 @@
       "description": "EXEMPLO 8"
     }, 
     
-        {
+    {
       "path": "/ex9/resources",
       "target": {
         "type": "service",
@@ -101,7 +101,19 @@
         "version": "1.71.19"
 
     },
-      "description": "EXEMPLO 8"
+      "description": "EXEMPLO 9"
+    }, 
+
+    {
+      "path": "/ex10/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources",
+        "version": "1.71.19"
+
+    },
+      "description": "EXEMPLO 10"
     }, 
     
     {
