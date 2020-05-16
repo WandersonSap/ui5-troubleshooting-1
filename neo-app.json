@@ -37,7 +37,8 @@
       "target": {
         "type": "service",
         "name": "sapui5",
-        "entryPath": "/resources"
+        "entryPath": "/resources",
+        "version": "1.69.0"
 
       },
       "description": "EXEMPLO 4"
