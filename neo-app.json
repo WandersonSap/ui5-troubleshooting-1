@@ -81,6 +81,17 @@
     }, 
 
     {
+      "path": "/ex8/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources",
+        "version": "1.71.19"
+
+    },
+      "description": "EXEMPLO 8"
+    }, 
+    {
       "path": "/test-resources",
       "target": {
         "type": "service",
