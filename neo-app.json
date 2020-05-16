@@ -57,16 +57,28 @@
     },   
 
     {
-      "path": "/ex66/resources",
+      "path": "/ex6/resources",
       "target": {
         "type": "service",
         "name": "sapui5",
         "entryPath": "/resources",
-        "version": "1.69.0"
+        "version": "1.71.19"
 
       },
-      "description": "EXEMPLO 4"
+      "description": "EXEMPLO 6"
     },
+    
+    {
+      "path": "/ex7/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources",
+        "version": "1.71.19"
+
+    },
+      "description": "EXEMPLO 7"
+    }, 
 
     {
       "path": "/test-resources",
