@@ -9,20 +9,20 @@
 			sap-ui-resourceroots = Define um alias para um diretorio
 			sap-ui-oninit = executa um modulo de inicialização
 		-->
+
+		
+	</head>
 		<script id="sap-ui-bootstrap"
-				src="resources/sap-ui-core.js"
+				src="../ex5/resources/sap-ui-core.js"
 				data-sap-ui-theme="sap_belize"
 				data-sap-ui-resourceroots='{
 					"ovly": "./src"
 				}'
 				data-sap-ui-oninit="module:ovly/logica"
 				data-sap-ui-compatVersion="edge"
-				data-sap-ui-async="true"
+				data-sap-ui-libs="sap.m"
 				data-sap-ui-frameOptions="trusted">
 		</script>
-		
-	</head>
-	
 	<body class="sapUiBody">
 		<div id="root"></div>
 	</body>

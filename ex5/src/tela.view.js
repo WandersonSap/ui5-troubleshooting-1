@@ -15,7 +15,7 @@ sap.ui.jsview("ovly.tela", {
 		var sLanguage = sap.ui.getCore().getConfiguration().getLanguage();
 		oInput.setValue(sLanguage); 
 		oInput.setEnabled(false);
-		aControles.push(oLabel);
+		aControles.push(oInput);
 		
 		return aControles;
 	
