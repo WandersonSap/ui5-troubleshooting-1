@@ -2,6 +2,7 @@
 	displayBlock="true"
 	xmlns:mvc="sap.ui.core.mvc" 
 	xmlns="sap.m" 
+	xmlns:core="sap.ui.core" 
 	xmlns:f="sap.ui.layout.form"  
 	height="100%"
 	>
@@ -41,9 +42,9 @@
 							<Label text="Categoria" />
 							<Select >
 								<items >
-									<Item xmlns="sap.ui.core" key="1" text="Infantil" />
-									<Item xmlns="sap.ui.core" key="2" text="Ficção" />
-									<Item xmlns="sap.ui.core" key="3" text="Biografia" />
+									<core:ListItem text="Infantil" key="1"/>
+									<core:ListItem text="Ficção" key="2"/>
+									<core:ListItem text="Biografia" key="3"/>
 								</items>
 							</Select>
 							<Label text="Lançado em" />
@@ -51,13 +52,13 @@
 						</f:content>
 					</f:SimpleForm>
 				</content>
-				<Footer>
+				<footer>
 					<Bar>
-						<right>
+						<contentRight>
 							<Button text="Salvar" type="Emphasized" />
-						</right>
+						</contentRight>
 					</Bar>
-				</Footer>
+				</footer>
 			</Page>
 		</pages>
 	</App>
