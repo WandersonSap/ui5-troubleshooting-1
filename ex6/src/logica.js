@@ -2,6 +2,6 @@
     console.log("UI5 carregou");
     
     var oVisao = sap.ui.xmlview("visao", "ovly.tela");
-    oVisao..placeAt("root");
+    oVisao.placeAt("root");
     
  });
