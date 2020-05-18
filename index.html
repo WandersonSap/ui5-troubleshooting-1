@@ -1,57 +1,44 @@
 <!DOCTYPE html>
 <html>
-	
 	<head>
-	    <meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <meta name="description" content="">
-	    <meta name="author" content="Fabio Pagoti">
-	    
-	    <title>Troubleshooting UI5 Apps</title>
-	    
-	 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exercício 10</title>
+	
+		<script id="sap-ui-bootstrap"
+				src="/ex10/resources/sap-ui-core.js"
+				data-sap-ui-theme="sap_fiori_3"
+				data-sap-ui-resourceroots='{
+					"ovly": "./ex10/src"
+				}'
+				data-sap-ui-compatVersion="edge" 
+				data-sap-ui-async="true">
+		</script>
+		
+		<script>
+			sap.ui.getCore().attachInit(function(){
+				
+				sap.ui.require(
+					[
+						"sap/ui/core/mvc/View",
+						"ovly/logica.controller",
+						"sap/ui/core/library"
+					], 
+					function(View, oController, coreLibrary){
+						View.create({
+						    viewName: "ovly.tela",
+						    controller: oController,
+						    type: coreLibrary.mvc.ViewType.XML
+						}).then(function(oView) {
+						    oView.placeAt("root");
+						});
+					}
+				);
+			})
+		</script>
+		
 	</head>
-	<script id="sap-ui-bootstrap" 
-	     type="text/javascript"
-	     src="resources/sap-ui-core.js"
-	     data-sap-ui-theme="sap_belize"
-	     data-sap-ui-libs="sap.m,sap.ui.codeeditor,sap.f,sap.uxap,sap.ndc"
-	     data-sap-ui-compatVersion="edge">
-	</script>
-	<body>
-		<ul>
-			<li>
-				<a href="ex1/ex1.html" target="_blank">Exercício 1</a>
-			</li>
-			<li>
-				<a href="ex2/ex2.html" target="_blank">Exercício 2</a>
-			</li>
-			<li>
-				<a href="ex3/ex3.html" target="_blank">Exercício 3</a>
-			</li>
-			<li>
-				<a href="ex4/ex4.html" target="_blank">Exercício 4</a>
-			</li>
-			<li>
-				<a href="ex5/ex5.html" target="_blank">Exercício 5</a>
-			</li>
-			<li>
-				<a href="ex6/ex6.html" target="_blank">Exercício 6</a>
-			</li>
-			<li>
-				<a href="ex7/ex7.html" target="_blank">Exercício 7</a>
-			</li>
-			<li>
-				<a href="ex8/ex8.html" target="_blank">Exercício 8</a>
-			</li>
-			<li>
-				<a href="ex9/ex9.html" target="_blank">Exercício 9</a>
-			</li>
-			<li>
-				<a href="ex10/ex10.html" target="_blank">Exercício 10</a>
-			</li>
-		</ul>
+	
+	<body class="sapUiBody" id="root" role="application">
 	</body>
-
 </html>
